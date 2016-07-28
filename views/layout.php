@@ -27,7 +27,9 @@ $isActive = function ($page) use ($controller) {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">Kelly Webber</a>
+                    <div>
+                        <a class="navbar-brand" href="/">Kelly Webber</a> <span class="sub-brand">Graphic Design</span>
+                    </div>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -40,7 +42,14 @@ $isActive = function ($page) use ($controller) {
             </nav>
 
             <?php require_once('routes.php'); ?>
-            <footer><p>Footer</p></footer>
+            <footer>
+                <p>
+                    <a href="mailto:kwebber@mica.edu" target="_blank"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/kteagan94/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://www.behance.net/Kelly-Webber" target="_blank"><i class="fa fa-behance fa-3x" aria-hidden="true"></i></a>
+                </p>
+                <p><i>Baltimore, MD + Philadelphia, PA</i></p>
+            </footer>
         </div> <!-- container -->
 
         <!-- Bootstrap and core JavaScript -->
