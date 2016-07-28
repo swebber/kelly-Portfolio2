@@ -17,10 +17,9 @@ $isActive = function ($page) use ($controller) {
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
-
-        <!-- Static navbar -->
-        <nav class="navbar navbar-default">
-            <div class="container">
+        <div class="container">
+            <!-- Static navbar -->
+            <nav class="navbar navbar-default">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
@@ -38,11 +37,11 @@ $isActive = function ($page) use ($controller) {
                         <li <?php $isActive('resume'); ?>><a href="/?controller=resume">Resume</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
-            </div><!--/.container-fluid -->
-        </nav>
+            </nav>
 
-        <?php require_once('routes.php'); ?>
-        <footer><p>Footer</p></footer>
+            <?php require_once('routes.php'); ?>
+            <footer><p>Footer</p></footer>
+        </div> <!-- container -->
 
         <!-- Bootstrap and core JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
