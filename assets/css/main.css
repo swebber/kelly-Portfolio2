@@ -32,10 +32,9 @@ html {
     -webkit-tap-highlight-color: transparent; }
 
 body {
-    /*font-family: "Raleway";*/
     font-size: 15px;
     line-height: 1.6;
-    color: #222;
+    color: #3e484d;
     background-color: #fff; 
 }
 
@@ -87,6 +86,72 @@ footer::before {
     display: block;
     margin-bottom: 15px;
     width: 100%; 
+}
+
+/* === Text-Related Treatments === */
+
+h1 {
+    color: #8BC5c2;
+    font-size: 51px;
+    font-weight: bold;
+}
+
+h1::after {
+    border-bottom: solid 4px #f6e05c;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    content: "";
+}
+
+.about-content p {
+    font-size: 20px;
+    margin: 50px;
+}
+
+.resume-content h2 {
+    color: #8BC5c2;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 50px 0 20px 0;
+}
+
+.resume-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 15px 5px 100px;
+}
+
+.resume-content p {
+    font-size: 16px;
+    margin: 5px 15px 25px 100px;
+}
+
+.resume-content .resume-list {
+    margin: 5px 15px 25px 100px;
+    font-size: 16px;
+}
+
+.resume-content .resume-list ul {
+    list-style-position: inside;
+    padding-left: 0;
+    list-style: disc;
+}
+
+.resume-content .skils-list {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.resume-content .skils-list h2 {
+    color: #9a1c50;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+}
+
+.resume-content .skils-list ul {
+    list-style-image: url('../img/yellow-square.jpg')
 }
 
 /* === Images, Links, and Other Salient Features === */
