@@ -1,0 +1,1 @@
+<p>Comparing Type</p>

@@ -1,0 +1,1 @@
+<p>MICA blog</p>

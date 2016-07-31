@@ -18,13 +18,13 @@ function call($controller, $action) {
             break;
     }
     
-    $controller->{ $action }();
+    $controller->{ str_replace('-', '_', $action) }();
 }
 
 $controllers = array(
     'home' => ['index', 'error'],
     'about' => ['index'],
-    'portfolio' => ['index'],
+    'portfolio' => ['index', 'tickets', 'alphabet', 'archi-type', 'east-cuisine', 'meat', 'mica-blog', 'belgrade', 'comparing-type', 'photography', 'printmaking'],
     'resume' => ['index']);
 
 if (array_key_exists($controller, $controllers)) {

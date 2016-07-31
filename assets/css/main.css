@@ -154,6 +154,16 @@ h1::after {
     list-style-image: url('../img/yellow-square.jpg')
 }
 
+.portfolio-content .portfolio-list {
+    font-size: 15px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.portfolio-content .portfolio-list p {
+    /*width: 100%;*/
+}
+
 /* === Images, Links, and Other Salient Features === */
 
 img {
@@ -222,3 +232,4 @@ div.c-wrapper {
     margin: auto;
     width: 100%;
 }
+
