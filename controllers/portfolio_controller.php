@@ -4,6 +4,7 @@ class PortfolioController {
     public function __construct() {}
     
     public function index() {
+        $portfolioList = Portfolio::all();
         require_once('/views/portfolio/index.php');
     }
     

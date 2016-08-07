@@ -233,3 +233,57 @@ div.c-wrapper {
     width: 100%;
 }
 
+#portfolio-grid {
+    margin: 0;
+    padding: 0;
+}
+
+#portfolio-grid li {
+    display: inline-block;
+    margin: 0 0 15px 15px;
+    padding: 0;
+}
+
+#portfolio-grid li .portfolio-item {
+    position: relative;
+}
+
+#portfolio-grid li a {
+    border: 4px solid #fff;
+    display: block;
+}
+
+#portfolio-grid li a:hover {
+    border: 4px solid #9a1c50;
+}
+
+#portfolio-grid li a:hover img {
+    opacity: 0.2;
+}
+
+#portfolio-grid li .portfolio-item {
+    display: inline-block;
+    width: 200px;
+}
+
+#portfolio-grid li img {
+    width: 100%;
+}
+
+#portfolio-grid li .portfolio-item .overlay-content {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #9a1c50;
+    left: 0;
+    top: 40%;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+    display: none;
+}
+
+#portfolio-grid li .portfolio-item:hover .overlay-content {
+    display: inherit;
+}

@@ -1,7 +1,15 @@
 <?php
 
 function call($controller, $action) {
-    require_once('controllers/' . $controller . '_controller.php');
+    
+    $controllerFile = 'controllers/' . $controller . '_controller.php';
+    $modelFile = 'models/' . $controller . '.php';
+    
+    require_once($controllerFile);
+    
+    if (file_exists($modelFile)) {
+        require_once($modelFile);
+    }
     
     switch ($controller) {
         case 'home':
