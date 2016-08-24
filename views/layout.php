@@ -14,6 +14,7 @@ $isActive = function ($page) use ($controller) {
         <title></title>
         <link rel="stylesheet" href="/assets/css/fonts.css">
         <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/bxslider/jquery.bxslider.css">
         <link rel="stylesheet" href="/assets/css/main.css">
     </head>
     <body>
@@ -56,6 +57,7 @@ $isActive = function ($page) use ($controller) {
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="assets/jquery/dist/jquery.min.js"><\/script>');</script>
         <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/assets/bxslider/jquery.bxslider.min.js"></script>
 
     </body>
 </html>
