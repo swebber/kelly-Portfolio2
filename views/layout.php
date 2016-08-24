@@ -11,6 +11,7 @@ $isActive = function ($page) use ($controller) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://use.fontawesome.com/7a60f06c6d.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <title></title>
         <link rel="stylesheet" href="/assets/css/fonts.css">
         <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
@@ -54,7 +55,6 @@ $isActive = function ($page) use ($controller) {
         </div> <!-- container -->
 
         <!-- Bootstrap and core JavaScript -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="assets/jquery/dist/jquery.min.js"><\/script>');</script>
         <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="/assets/bxslider/jquery.bxslider.min.js"></script>
