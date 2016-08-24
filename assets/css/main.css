@@ -15,14 +15,14 @@
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 *:before,
 *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 /* === Primary Layout Structure */
@@ -35,7 +35,7 @@ body {
     font-size: 15px;
     line-height: 1.6;
     color: #3e484d;
-    background-color: #fff; 
+    background-color: #fff;
 }
 
 /* === Secondary Layout Structure === */
@@ -85,7 +85,7 @@ footer::before {
     content: "";
     display: block;
     margin-bottom: 15px;
-    width: 100%; 
+    width: 100%;
 }
 
 /* === Text-Related Treatments === */
@@ -167,13 +167,13 @@ h1::after {
 /* === Images, Links, and Other Salient Features === */
 
 img {
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 
 .img-responsive {
     display: block;
     max-width: 100%;
-    height: auto; 
+    height: auto;
 }
 
 /* === Miscellaneous Stuff and Template Code === */
@@ -182,55 +182,48 @@ img {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
-    padding-right: 15px; 
+    padding-right: 15px;
 }
 .container:before, .container:after {
     content: " ";
     display: table; }
 .container:after {
-    clear: both; 
+    clear: both;
 }
 @media (min-width: 768px) {
     .container {
-        width: 750px; 
+        width: 750px;
     }
 }
 @media (min-width: 992px) {
     .container {
-        width: 970px; 
+        width: 970px;
     }
 }
 @media (min-width: 1200px) {
     .container {
-        width: 1170px; 
+        width: 1170px;
     }
 }
 
 .fa-behance {
     color: #1769ff;
-    margin-left: 15px; 
+    margin-left: 15px;
 }
 
 .fa-instagram {
     color: #c13584;
-    margin-left: 15px; 
+    margin-left: 15px;
 }
 
 .fa-envelope-o {
-    color: #34a853; 
+    color: #34a853;
 }
 
 div.c-wrapper {
     margin: 0 auto 20px auto;
     max-width: 550px;
     width: 90%;
-}
-
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    border-radius: 50%;
-    margin: auto;
-    width: 100%;
 }
 
 #portfolio-grid {
@@ -286,4 +279,11 @@ div.c-wrapper {
 
 #portfolio-grid li .portfolio-item:hover .overlay-content {
     display: inherit;
+}
+
+#myCarousel .carousel-inner > .item > img,
+#myCarousel .carousel-inner > .item > a > img {
+    border-radius: 50%;
+    margin: auto;
+    width: 100%;
 }
