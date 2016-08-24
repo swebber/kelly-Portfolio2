@@ -32,19 +32,21 @@
         });
 
         var realThumbSlider = $('#bxslider-pager').bxSlider({
-            minSlides: 4,
-            maxSlides: 4,
+            minSlides: 5,
+            maxSlides: 5,
             slideWidth: 143,
             slideMargin: 12,
             pager: false,
             moveSlides: 1,
             speed: 1000,
             infiniteLoop: false,
-            hideControlOnEnd: true,
+            hideControlOnEnd: true
+            /*
             nextText: '<span></span>',
             prevText: '<span></span>',
             onSlideBefore: function ($slideElement, oldIndex, newIndex) {
             }
+            */
         });
 
         linkRealSliders(realSlider,realThumbSlider);
@@ -64,14 +66,12 @@
 
         //slider!=$thumbSlider. slider is the realslider
         function changeRealThumb(slider,newIndex){
-
             var $thumbS=$("#bxslider-pager");
             $thumbS.find('.active').removeClass("active");
             $thumbS.find('li[data-slideIndex="'+newIndex+'"]').addClass("active");
-
             if(slider.getSlideCount()-newIndex>=4)slider.goToSlide(newIndex);
             else slider.goToSlide(slider.getSlideCount()-4);
-
         }
+
     });
 </script>
