@@ -1,6 +1,6 @@
 <div class="portfolio-content">
 
-    <h1>East Cuisine</h1>
+    <h1>Ashley, PA</h1>
 
 </div>
 
