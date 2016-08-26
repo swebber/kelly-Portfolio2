@@ -1,5 +1,9 @@
 <?php
 
+function startsWith($haystack, $needle) {
+    return $needle === "" || strrpos($haystack, $needle, -strlen($haystack)) !== false;
+}
+
 function call($controller, $action) {
 
     $controllerFile = 'controllers/' . $controller . '_controller.php';
@@ -29,18 +33,15 @@ function call($controller, $action) {
     $controller->{ str_replace('-', '_', $action) }();
 }
 
-$controllers = array(
-    'home' => ['index', 'error'],
-    'about' => ['index'],
-    'portfolio' => ['index', 'tickets', 'alphabet', 'archi-type', 'ashley-pa', 'east-cuisine', 'meat', 'mica-blog', 'belgrade', 'comparing-type', 'photography', 'printmaking'],
-    'resume' => ['index']);
+$viewFolder = './views';
+$viewPath = realpath($viewFolder);
+$controllerFolder = $viewFolder . '/' . $controller;
+$controllerPath = realpath($controllerFolder);
+$actionFile = $controllerFolder . '/' . $action . '.php';
+$actionPath = realpath($actionFile);
 
-if (array_key_exists($controller, $controllers)) {
-    if (in_array($action, $controllers[$controller])) {
-        call($controller, $action);
-    } else {
-        call('home', 'error');
-    }
+if (startsWith($controllerFolder, $viewFolder) && startsWith($actionPath, $controllerPath) && is_dir($controllerFolder) && is_file($actionFile)) {
+    call($controller, $action);
 } else {
     call('home', 'error');
 }
