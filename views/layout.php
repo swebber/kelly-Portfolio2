@@ -19,7 +19,7 @@ $isActive = function ($page) use ($controller) {
         <link rel="stylesheet" href="/assets/css/main.css">
     </head>
     <body>
-        <?php include_once("/analyticstracking.php"); ?>
+        <?php include_once("analyticstracking.php"); ?>
         <div class="container">
             <!-- Static navbar -->
             <nav class="navbar navbar-default">
